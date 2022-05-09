@@ -1,4 +1,4 @@
-def draw_button(label_text, x, y, foreground_color, is_dark_mode)
+def draw_button(label_text, x, y, button_location, foreground_color, is_dark_mode)
     if is_dark_mode
       # darken foreground color for dark mode
       paint(label_text, x, y, foreground_color - 10, '#111111')
@@ -13,4 +13,5 @@ class ButtonLocation
     def initialize(x,y)
         @x = x 
         @y = y
+    end
 end
