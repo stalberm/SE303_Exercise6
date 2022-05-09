@@ -7,7 +7,11 @@ def draw_normal_button(label_text, button_location, foreground_color)
 end
 
 class Button
-
+    def initialize(label_text, button_location, foreground_color)
+        @label_text = label_text
+        @button_location = button_location
+        @foreground_color = foreground_color
+    end
 end
 
 class ButtonLocation
