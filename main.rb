@@ -5,11 +5,11 @@ class Button
         @foreground_color = foreground_color
     end
 
-    def draw_dark_mode_button(label_text, button_location, foreground_color)
+    def draw_dark_mode(label_text, button_location, foreground_color)
         paint(label_text, button_location.x, button_location.y, foreground_color - 10, '#111111')
     end
     
-    def draw_normal_button(label_text, button_location, foreground_color)
+    def draw_normal(label_text, button_location, foreground_color)
         paint(label_text, button_location.x, button_location.y, foreground_color + 10, '#E0E0E0')
     end
 end
